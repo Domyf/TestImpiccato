@@ -108,7 +108,7 @@ public class SplashArtActivity extends Activity {
             for (int i=0; i<ids.length; i++)
                 loadedDrawables[i] = ResourcesCompat.getDrawable(getResources(), ids[i], null);
             //After the drawable is loaded, onPostExecute is called
-            Log.i("doInBackground|SplashArt", "Ho caricato in background i drawables");
+            Log.i("doInBackground|Splash", "Ho caricato in background i drawables");
 
             return loadedDrawables;
         }
@@ -195,3 +195,78 @@ public class SplashArtActivity extends Activity {
         protected void onProgressUpdate(Void... values) {}
     }
 }
+
+
+//Vera Splash Art
+/*
+public class SplashArtActivity extends Activity {
+
+    ImageView cloud1;
+    ImageView cloud2;
+    ImageView cloud3;
+    ImageView cloud4;
+    ImageView hider;
+    ImageView impiccato;
+    boolean skip;
+
+    */
+/**Salta lo splashscreen*//*
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        startActivity(new Intent(this, HomeActivity.class));
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        skip = true;
+        this.finish();
+        return super.onTouchEvent(event);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_splashart);
+
+        skip = false;
+
+        impiccato = (ImageView) findViewById(R.id.impiccato);
+        cloud1 = (ImageView) findViewById(R.id.cloud1);
+        cloud2 = (ImageView) findViewById(R.id.cloud2);
+        cloud3 = (ImageView) findViewById(R.id.cloud3);
+        cloud4 = (ImageView) findViewById(R.id.cloud4);
+        hider = (ImageView) findViewById(R.id.hider);
+
+        impiccato.setVisibility(ImageView.INVISIBLE);
+
+        Animation moveCloud1 = AnimationUtils.loadAnimation(this, R.anim.movecloud1);
+        Animation moveCloud2 = AnimationUtils.loadAnimation(this, R.anim.movecloud2);
+        Animation moveCloud3 = AnimationUtils.loadAnimation(this, R.anim.movecloud3);
+        Animation moveCloud4 = AnimationUtils.loadAnimation(this, R.anim.movecloud4);
+        Animation movehider = AnimationUtils.loadAnimation(this, R.anim.movehider);
+
+        cloud1.startAnimation(moveCloud1);
+        cloud2.startAnimation(moveCloud2);
+        cloud3.startAnimation(moveCloud3);
+        cloud4.startAnimation(moveCloud4);
+        hider.startAnimation(movehider);
+
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                impiccato.setVisibility(ImageView.VISIBLE);
+                impiccato.startAnimation(AnimationUtils.loadAnimation(SplashArtActivity.this, R.anim.impiccatoanim));
+            }
+        }, 1500);
+
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                if (!skip)
+                    play();
+            }
+        }, 4000);
+    }
+
+    private void play() {
+        startActivity(new Intent(this, HomeActivity.class));
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        this.finish();
+    }
+}*/
