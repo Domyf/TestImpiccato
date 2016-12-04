@@ -41,12 +41,12 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         home = true;   //True perchè all'apertura l'applicazione mostra la home di default
 
-        /*playbtn = (HDTMButton) findViewById(R.id.btnPlay);
+        playbtn = (HDTMButton) findViewById(R.id.btnPlay);
         creditsbtn = (HDTMButton) findViewById(R.id.btnCredits);
         singleplayerbtn = (HDTMButton) findViewById(R.id.btnSingleplayer);
-        multiplayerbtn = (HDTMButton) findViewById(R.id.btnMultiplayer);*/
+        multiplayerbtn = (HDTMButton) findViewById(R.id.btnMultiplayer);
 
-        new LoadDrawable().execute(new Integer(R.drawable.life1));
+        //new LoadDrawable().execute(new Integer(R.drawable.life1));
 
         Typeface font = Typeface.createFromAsset(getApplicationContext().getAssets(), "HDevTMPencil.ttf");
         try {

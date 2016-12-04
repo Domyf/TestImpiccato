@@ -47,50 +47,50 @@ public class SplashArtActivity extends Activity {
 
         skip = false;
 
-        /*impiccato = (ImageView) findViewById(R.id.impiccato);
+        impiccato = (ImageView) findViewById(R.id.impiccato);
         cloud1 = (ImageView) findViewById(R.id.cloud1);
         cloud2 = (ImageView) findViewById(R.id.cloud2);
         cloud3 = (ImageView) findViewById(R.id.cloud3);
         cloud4 = (ImageView) findViewById(R.id.cloud4);
         hider = (ImageView) findViewById(R.id.hider);
         hider.setVisibility(ImageView.INVISIBLE);
-        impiccato.setVisibility(ImageView.INVISIBLE);*/
+        impiccato.setVisibility(ImageView.INVISIBLE);
 
-//        moveCloud1 = AnimationUtils.loadAnimation(this, R.anim.movecloud1);
-//        moveCloud2 = AnimationUtils.loadAnimation(this, R.anim.movecloud2);
-//        moveCloud3 = AnimationUtils.loadAnimation(this, R.anim.movecloud3);
-//        moveCloud4 = AnimationUtils.loadAnimation(this, R.anim.movecloud4);
-//        movehider = AnimationUtils.loadAnimation(this, R.anim.movehider);
+        moveCloud1 = AnimationUtils.loadAnimation(this, R.anim.movecloud1);
+        moveCloud2 = AnimationUtils.loadAnimation(this, R.anim.movecloud2);
+        moveCloud3 = AnimationUtils.loadAnimation(this, R.anim.movecloud3);
+        moveCloud4 = AnimationUtils.loadAnimation(this, R.anim.movecloud4);
+        movehider = AnimationUtils.loadAnimation(this, R.anim.movehider);
 
-//        cloud1.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud1, null));
-//        cloud2.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud2, null));
-//        cloud3.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud3, null));
-//        cloud4.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud4, null));
-//       impiccato.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.logoimpiccato, null));
+/*        cloud1.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud1, null));
+        cloud2.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud2, null));
+        cloud3.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud3, null));
+        cloud4.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud4, null));
+        impiccato.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.logoimpiccato, null));*/
 
-        new LoadAnimation().execute();
+        //new LoadAnimation().execute();
         //new LoadDrawable().execute(new Integer(R.drawable.cloud1), new Integer(R.drawable.cloud2), new Integer(R.drawable.cloud3), new Integer(R.drawable.cloud4), new Integer(R.drawable.logoimpiccato));
 
 
-//        cloud1.startAnimation(moveCloud1);
-//        cloud2.startAnimation(moveCloud2);
-//        cloud3.startAnimation(moveCloud3);
-//        cloud4.startAnimation(moveCloud4);
-//        hider.startAnimation(movehider);
+        cloud1.startAnimation(moveCloud1);
+        cloud2.startAnimation(moveCloud2);
+        cloud3.startAnimation(moveCloud3);
+        cloud4.startAnimation(moveCloud4);
+        hider.startAnimation(movehider);
 
-//        new Handler().postDelayed(new Runnable() {
-//            public void run() {
-//                impiccato.setVisibility(ImageView.VISIBLE);
-//                impiccato.startAnimation(AnimationUtils.loadAnimation(SplashArtActivity.this, R.anim.impiccatoanim));
-//            }
-//        }, 1500);
-//
-//        new Handler().postDelayed(new Runnable() {
-//            public void run() {
-//                if (!skip)
-//                    play();
-//            }
-//        }, 4000);
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                impiccato.setVisibility(ImageView.VISIBLE);
+                impiccato.startAnimation(AnimationUtils.loadAnimation(SplashArtActivity.this, R.anim.impiccatoanim));
+            }
+        }, 1500);
+
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
+                if (!skip)
+                    play();
+            }
+        }, 4000);
     }
 
     private void play() {
@@ -198,8 +198,7 @@ public class SplashArtActivity extends Activity {
 
 
 //Vera Splash Art
-/*
-public class SplashArtActivity extends Activity {
+/*public class SplashArtActivity extends Activity {
 
     ImageView cloud1;
     ImageView cloud2;
@@ -207,11 +206,18 @@ public class SplashArtActivity extends Activity {
     ImageView cloud4;
     ImageView hider;
     ImageView impiccato;
+
+    Animation moveCloud1;
+    Animation moveCloud2;
+    Animation moveCloud3;
+    Animation moveCloud4;
+    Animation movehider;
+
     boolean skip;
 
-    */
-/**Salta lo splashscreen*//*
-
+    *//**
+     * Salta lo splashscreen
+     *//*
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         startActivity(new Intent(this, HomeActivity.class));
@@ -224,7 +230,7 @@ public class SplashArtActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splashart);
+        setContentView(R.layout.activity_splash_art);
 
         skip = false;
 
@@ -234,14 +240,24 @@ public class SplashArtActivity extends Activity {
         cloud3 = (ImageView) findViewById(R.id.cloud3);
         cloud4 = (ImageView) findViewById(R.id.cloud4);
         hider = (ImageView) findViewById(R.id.hider);
-
+        hider.setVisibility(ImageView.INVISIBLE);
         impiccato.setVisibility(ImageView.INVISIBLE);
 
-        Animation moveCloud1 = AnimationUtils.loadAnimation(this, R.anim.movecloud1);
-        Animation moveCloud2 = AnimationUtils.loadAnimation(this, R.anim.movecloud2);
-        Animation moveCloud3 = AnimationUtils.loadAnimation(this, R.anim.movecloud3);
-        Animation moveCloud4 = AnimationUtils.loadAnimation(this, R.anim.movecloud4);
-        Animation movehider = AnimationUtils.loadAnimation(this, R.anim.movehider);
+        moveCloud1 = AnimationUtils.loadAnimation(this, R.anim.movecloud1);
+        moveCloud2 = AnimationUtils.loadAnimation(this, R.anim.movecloud2);
+        moveCloud3 = AnimationUtils.loadAnimation(this, R.anim.movecloud3);
+        moveCloud4 = AnimationUtils.loadAnimation(this, R.anim.movecloud4);
+        movehider = AnimationUtils.loadAnimation(this, R.anim.movehider);
+
+*//*        cloud1.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud1, null));
+        cloud2.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud2, null));
+        cloud3.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud3, null));
+        cloud4.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.cloud4, null));
+        impiccato.setImageDrawable(ResourcesCompat.getDrawable(getResources(), R.drawable.logoimpiccato, null));*//*
+
+        //new LoadAnimation().execute();
+        //new LoadDrawable().execute(new Integer(R.drawable.cloud1), new Integer(R.drawable.cloud2), new Integer(R.drawable.cloud3), new Integer(R.drawable.cloud4), new Integer(R.drawable.logoimpiccato));
+
 
         cloud1.startAnimation(moveCloud1);
         cloud2.startAnimation(moveCloud2);

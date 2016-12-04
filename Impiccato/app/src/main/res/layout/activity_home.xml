@@ -86,7 +86,8 @@
         android:layout_alignParentStart="true"
         android:layout_above="@+id/buttons"
         android:layout_marginRight="16dp"
-        android:layout_marginLeft="16dp" />
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/life1" />
 
     <RelativeLayout
         android:orientation="vertical"
@@ -111,7 +112,8 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:onClick="btnMultiPlayerOnClick"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:background="@drawable/woodbutton" />
 
         <com.hdevteam.impiccato.UI.HDTMButton
             android:layout_height="65dp"
@@ -123,7 +125,8 @@
             android:visibility="gone"
             android:layout_alignTop="@+id/btnPlay"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:background="@drawable/woodbutton" />
 
         <com.hdevteam.impiccato.UI.HDTMButton
             android:layout_height="65dp"
