@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="filelength_dizionario_easy">781</integer>
+    <integer name="filelength_dizionario_medium">794</integer>
+    <integer name="filelength_dizionario_hard">396</integer>
+
+</resources>

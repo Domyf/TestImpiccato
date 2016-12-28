@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <!-- A-G -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_table_row_layout_height"
+        android:id="@+id/AtoG"
+        android:layout_marginBottom="@dimen/keyboard_table_row_layout_margin_bottom_first"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="@dimen/keyboard_table_row_layout_margin_horizontal"
+        android:layout_marginLeft="@dimen/keyboard_table_row_layout_margin_horizontal">
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnA"
+            android:layout_weight="0.03"
+            android:adjustViewBounds="false"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnAOnClick"
+            android:text="A"
+            android:textAlignment="inherit"
+            android:background="@drawable/button_state"
+            android:visibility="visible"
+            android:layout_gravity="center"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnB"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnBOnClick"
+            android:text="B"
+            android:textSize="@dimen/keyboard_button_text_size"
+            android:textAlignment="center" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnC"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnCOnClick"
+            android:text="C"
+            android:textSize="@dimen/keyboard_button_text_size"
+            android:textAlignment="center" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnD"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnDOnClick"
+            android:layout_gravity="center_vertical"
+            android:text="D"
+            android:textSize="@dimen/keyboard_button_text_size"
+            android:textAlignment="center"
+            android:fontFamily="sans-serif-medium" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnE"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnEOnClick"
+            android:text="E"
+            android:textSize="@dimen/keyboard_button_text_size"
+            android:textAlignment="center" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnF"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnFOnClick"
+            android:text="F"
+            android:textSize="@dimen/keyboard_button_text_size"
+            android:textAlignment="center" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnG"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnGOnClick"
+            android:text="G"
+            android:textSize="@dimen/keyboard_button_text_size"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <!-- H-N -->
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_table_row_layout_height"
+        android:id="@+id/HtoN"
+        android:layout_marginTop="@dimen/keyboard_table_row_layout_margin_top"
+        android:layout_alignTop="@+id/AtoG"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentEnd="false"
+        android:layout_marginRight="@dimen/keyboard_table_row_layout_margin_horizontal"
+        android:layout_marginLeft="@dimen/keyboard_table_row_layout_margin_horizontal">
+
+        <!-- H-N -->
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnH"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:adjustViewBounds="false"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnHOnClick"
+            android:textAlignment="center"
+            android:text="H"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnI"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnIOnClick"
+            android:textAlignment="center"
+            android:text="I"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnJ"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnJOnClick"
+            android:textAlignment="center"
+            android:text="J"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnK"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnKOnClick"
+            android:textAlignment="center"
+            android:text="K"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnL"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnLOnClick"
+            android:textAlignment="center"
+            android:text="L"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnM"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnMOnClick"
+            android:textAlignment="center"
+            android:text="M"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnN"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnNOnClick"
+            android:textAlignment="center"
+            android:text="N"
+            android:textSize="@dimen/keyboard_button_text_size" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/keyboard_table_row_layout_height_3rd4th_row"
+        android:id="@+id/OtoU"
+        android:layout_below="@+id/HtoN"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="@dimen/keyboard_table_row_layout_margin_top_3rd4th_row"
+        android:layout_marginRight="@dimen/keyboard_table_row_layout_margin_horizontal"
+        android:layout_marginLeft="@dimen/keyboard_table_row_layout_margin_horizontal"
+        android:layout_alignParentBottom="false">
+
+        <!-- O-U -->
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnO"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:adjustViewBounds="false"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnOOnClick"
+            android:text="O"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnP"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnPOnClick"
+            android:text="P"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnQ"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnQOnClick"
+            android:text="Q"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnR"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnROnClick"
+            android:text="R"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnS"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnSOnClick"
+            android:text="S"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnT"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnTOnClick"
+            android:text="T"
+            android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnU"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnUOnClick"
+            android:text="U"
+            android:textSize="@dimen/keyboard_button_text_size" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/keyboard_table_row_layout_height_3rd4th_row"
+        android:id="@+id/VtoZ"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/OtoU"
+        android:layout_marginTop="@dimen/keyboard_table_row_layout_margin_top_3rd4th_row"
+        android:layout_marginLeft="@dimen/keyboard_table_row_layout_margin_right_left_last_row"
+        android:layout_marginRight="@dimen/keyboard_table_row_layout_margin_right_left_last_row">
+
+    <!-- V-Z -->
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnV"
+        android:background="@drawable/button_state"
+        android:layout_weight="0.03"
+        android:layout_marginRight="@dimen/keyboard_button_margin_right"
+        android:onClick="btnVOnClick"
+        android:text="V"
+        android:textSize="@dimen/keyboard_button_text_size"
+        android:layout_marginLeft="@dimen/keyboard_button_margin_left" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnW"
+        android:background="@drawable/button_state"
+        android:layout_weight="0.03"
+        android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+        android:layout_marginRight="@dimen/keyboard_button_margin_right"
+        android:onClick="btnWOnClick"
+        android:text="W"
+        android:textSize="@dimen/keyboard_button_text_size" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnX"
+        android:background="@drawable/button_state"
+        android:layout_weight="0.03"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+        android:layout_marginRight="@dimen/keyboard_button_margin_right"
+        android:onClick="btnXOnClick"
+        android:text="X"
+        android:textSize="@dimen/keyboard_button_text_size" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnY"
+        android:background="@drawable/button_state"
+        android:layout_weight="0.03"
+        android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/keyboard_button_margin_right"
+        android:onClick="btnYOnClick"
+        android:text="Y"
+        android:textSize="@dimen/keyboard_button_text_size" />
+
+        <com.hdevteam.impiccato.UI.HDTMButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnZ"
+            android:background="@drawable/button_state"
+            android:layout_weight="0.03"
+            android:layout_marginLeft="@dimen/keyboard_button_margin_left"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/keyboard_button_margin_right"
+            android:onClick="btnZOnClick"
+            android:text="Z"
+            android:textSize="@dimen/keyboard_button_text_size" />
+    </TableRow>
+
+    <ImageView
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:id="@+id/hider"
+        android:layout_alignBottom="@+id/VtoZ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="@dimen/keyboard_hider_layout_width" />
+
+</RelativeLayout>

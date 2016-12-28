@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hdevteam.impiccato.UI.HDTMTextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="@dimen/device_name_padding"
+          android:textSize="@dimen/device_name_text_size" />

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_credits"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hdevteam.impiccato.CreditsActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/logo"
+        android:src="@drawable/logoimpiccato"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="@dimen/credits_logo_layout_height"
+        android:layout_marginLeft="@dimen/credits_logo_layout_margin_horizontal"
+        android:layout_marginRight="@dimen/credits_logo_layout_margin_horizontal" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/hdev"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAllCaps="true"
+        android:text="@string/hdev"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/credits_hdev_text_size" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/developedBy"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAllCaps="true"
+        android:text="@string/developed_by"
+        android:textSize="@dimen/credits_developedBy_text_size"
+        android:lines="1"
+        android:layout_above="@+id/hdev" />
+
+    <ImageView
+        android:id="@+id/cloud4"
+        android:src="@drawable/cloud4"
+        android:layout_width="@dimen/credits_cloud4_layout_width"
+        android:layout_below="@+id/hdev"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_height="@dimen/credits_cloud4_layout_height" />
+
+    <ImageView
+        android:layout_width="@dimen/credits_cloud1_layout_width"
+        android:layout_height="@dimen/credits_cloud1_layout_height"
+        android:id="@+id/cloud1"
+        android:src="@drawable/cloud1"
+        android:layout_below="@+id/cloud4" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:id="@+id/btnDonate"
+        android:text="@string/donate"
+        android:background="@drawable/woodbutton_state"
+        android:textAlignment="center"
+        android:textSize="@dimen/credits_btnDonate_text_size"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="@dimen/credits_btnDonate_layout_height"
+        android:layout_width="@dimen/credits_btnDonate_layout_width"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/credits_btnDonate_layout_margin_bottom"
+        android:onClick="btnDonateOnClick" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/cloud3"
+        android:visibility="visible"
+        android:src="@drawable/cloud3"
+        android:layout_height="@dimen/credits_cloud3_layout_height"
+        android:layout_below="@+id/cloud1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:id="@+id/cloud2"
+        android:src="@drawable/cloud2"
+        android:layout_width="@dimen/credits_cloud2_layout_width"
+        android:layout_above="@+id/hdev"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/credits_cloud2_layout_margin_bottom"
+        android:layout_height="@dimen/credits_cloud2_layout_height" />
+
+</RelativeLayout>

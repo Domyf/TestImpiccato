@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground"
+    android:layout_marginLeft="@dimen/progress_dialog_layout_margin_horizontal"
+    android:layout_marginRight="@dimen/progress_dialog_layout_margin_horizontal">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cloud3"
+        android:id="@+id/imageView"
+        android:layout_weight="1"
+        android:padding="@dimen/progress_dialog_cloud3_padding"
+        android:layout_width="match_parent" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text = "@string/dialog_waiting_connection"
+        android:textSize="@dimen/progress_dialog_waiting_connection_text_size"
+        android:textAllCaps="true"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:padding="@dimen/progress_dialog_waiting_connection_padding"
+        android:id="@+id/HDTMTextView" />
+
+</LinearLayout>
