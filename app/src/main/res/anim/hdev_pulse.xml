@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  ~ Created by HDev (Antonio Siciliani, Cosimo Mollica, Daniele Monaca, Domenico Ferraro, Marco De Caria)
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 15/12/16 18.03
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha
+        android:startOffset="3000"
+        android:duration="400"
+        android:fromAlpha="0.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:toAlpha="1.0" />
+    <scale
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="400"
+        android:fromXScale="1.0"
+        android:fromYScale="1.0"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.1"
+        android:toYScale="1.1">
+    </scale>
+    <scale
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="2000"
+        android:fromXScale="1.1"
+        android:fromYScale="1.1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1.0"
+        android:toYScale="1.0"
+        android:repeatCount="-1"
+        android:repeatMode="reverse">
+    </scale>
+</set>

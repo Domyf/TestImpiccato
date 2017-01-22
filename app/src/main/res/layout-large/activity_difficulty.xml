@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_difficulty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.hdevteam.impiccato.DifficultyActivity">
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/selectDifficultyText"
+        android:text="@string/select_difficulty"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_select_difficulty_text_size"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnEasy" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_height="@dimen/difficulty_button_height"
+        android:textSize="@dimen/difficulty_button_text_size"
+        android:background="@drawable/woodbutton_state"
+        android:id="@+id/btnMedium"
+        android:onClick="btnMediumOnClick"
+        android:text="@string/medium"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/difficulty_button_margin"
+        android:textColor="@color/textColor"
+        android:paddingBottom="@dimen/buttons_padding_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_height="@dimen/difficulty_button_height"
+        android:background="@drawable/woodbutton_state"
+        android:id="@+id/btnEasy"
+        android:onClick="btnEasyOnClick"
+        android:text="@string/easy"
+        android:layout_above="@+id/btnMedium"
+        android:layout_alignRight="@+id/btnMedium"
+        android:layout_alignEnd="@+id/btnMedium"
+        android:layout_alignLeft="@+id/btnMedium"
+        android:layout_alignStart="@+id/btnMedium"
+        android:textSize="@dimen/difficulty_button_text_size"
+        android:layout_width="@dimen/difficulty_button_width"
+        android:textColor="@color/textColor"
+        android:paddingBottom="@dimen/buttons_padding_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:layout_height="@dimen/difficulty_button_height"
+        android:background="@drawable/woodbutton_state"
+        android:id="@+id/btnHard"
+        android:onClick="btnHardOnClick"
+        android:layout_width="match_parent"
+        android:text="@string/hard"
+        android:textSize="@dimen/difficulty_button_text_size_hard"
+        android:layout_below="@+id/btnMedium"
+        android:layout_alignLeft="@+id/btnMedium"
+        android:layout_alignStart="@+id/btnMedium"
+        android:layout_alignRight="@+id/btnMedium"
+        android:layout_alignEnd="@+id/btnMedium"
+        android:textColor="@color/textColor"
+        android:paddingBottom="@dimen/buttons_padding_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_height="wrap_content"
+        android:id="@+id/bestScoreHard"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_score_size"
+        android:text="99999999"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/mediumText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/mediumText"
+        android:layout_toRightOf="@+id/mediumText"
+        android:layout_marginBottom="@dimen/difficulty_best_score_margin_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bestScoreMedium"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_score_size"
+        android:text="99999999"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/bestScoreEasy"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/difficulty_best_score_margin_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/hardText"
+        android:text="@string/hard"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_score_size"
+        android:layout_weight="1"
+        android:layout_above="@+id/bestScoreHard"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/mediumText"
+        android:layout_toRightOf="@+id/mediumText" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/easyText"
+        android:text="@string/easy"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_score_size"
+        android:layout_weight="1"
+        android:layout_above="@+id/bestScoreEasy"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/mediumText"
+        android:layout_toLeftOf="@+id/mediumText" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bestScoreEasy"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_score_size"
+        android:text="99999999"
+        android:gravity="center_vertical|center_horizontal"
+        android:textAlignment="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/mediumText"
+        android:layout_toStartOf="@+id/mediumText"
+        android:layout_marginBottom="@dimen/difficulty_best_score_margin_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediumText"
+        android:text="@string/medium"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_score_size"
+        android:layout_weight="1"
+        android:layout_above="@+id/bestScoreMedium"
+        android:layout_centerHorizontal="true" />
+
+    <com.hdevteam.impiccato.UI.HDTMTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bestscorestitle"
+        android:text="@string/best_scores"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/textColor"
+        android:textAllCaps="true"
+        android:textSize="@dimen/difficulty_best_score_title_size"
+        android:layout_above="@+id/hardText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="@dimen/difficulty_best_score_title_margin_bottom" />
+
+</RelativeLayout>

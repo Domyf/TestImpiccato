@@ -1,0 +1,186 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">0dp</dimen>
+    <dimen name="activity_vertical_margin">0dp</dimen>
+
+    <!-- Game activity -->
+
+    <dimen name = "game_textViewGuessedLetters_layout_margin_bottom">30dp</dimen>
+    <dimen name = "game_textViewGuessedLetters_layout_margin_top">15dp</dimen>
+    <dimen name = "game_textViewGuessedLetters_layout_height">69dp</dimen>
+    <dimen name = "game_textViewGuessedLetters_text_size">75sp</dimen>
+    <dimen name = "game_scoreBar_layout_height">48dp</dimen>
+    <dimen name = "game_scoreBarLine_layout_height">3dp</dimen>
+    <dimen name = "game_scoreBarLine_layout_margin_left_right">9dp</dimen>
+    <dimen name = "game_txtMultiplier_layout_margin_top_right">8dp</dimen>
+    <dimen name = "game_txtMultiplier_text_size">45sp</dimen>
+    <dimen name = "game_bestScore_text_size">60sp</dimen>
+    <dimen name = "game_txtScore_text_size">98sp</dimen>
+    <dimen name = "game_bulbOnClick_layout_height_width">68dp</dimen>
+    <dimen name = "game_bulbOnClick_layout_margin_top">23dp</dimen>
+    <dimen name = "game_bulb_padding">7dp</dimen>
+    <dimen name = "game_bulb_background_height">82dp</dimen>
+    <dimen name = "game_bulb_background_width">90dp</dimen>
+    <dimen name = "game_life_layout_margin_top">15dp</dimen>
+    <dimen name = "game_life_layout_margin_horizontal">24dp</dimen>
+    <dimen name = "game_keyboard_layout_height">105dp</dimen>
+
+    <!-- Keyboard -->
+
+    <dimen name = "keyboard_button_text_size">55sp</dimen>
+    <dimen name = "keyboard_button_margin_right">8dp</dimen>
+    <dimen name = "keyboard_button_margin_left">8dp</dimen>
+    <dimen name = "keyboard_table_row_layout_margin_horizontal">24dp</dimen>
+    <dimen name = "keyboard_table_row_layout_margin_right_left_last_row">106dp</dimen>
+    <dimen name = "keyboard_table_row_layout_height">47dp</dimen>
+    <dimen name = "keyboard_table_row_layout_margin_bottom_first">197dp</dimen>
+    <dimen name = "keyboard_table_row_layout_margin_top">59dp</dimen>
+    <dimen name = "keyboard_table_row_layout_height_3rd4th_row">47dp</dimen>
+    <dimen name = "keyboard_table_row_layout_margin_top_3rd4th_row">12dp</dimen>
+    <dimen name = "keyboard_hider_layout_width">2dp</dimen>
+
+    <!-- Home -->
+
+    <dimen name = "home_scoreBar_layout_height">48dp</dimen>
+    <dimen name = "home_line_layout_height">3dp</dimen>
+    <dimen name = "home_line_layout_margin_left_right">9dp</dimen>
+    <dimen name = "home_instagram_facebook_layout_width_height">38dp</dimen>
+    <dimen name = "home_instagram_txtSeguici_layout_margin_right_end">15dp</dimen>
+    <dimen name = "home_txtSeguici_textSize">45sp</dimen>
+    <dimen name = "home_life_layout_margin_left_right">24dp</dimen>
+    <dimen name = "home_life_layout_margin_top">15dp</dimen>
+    <dimen name = "home_buttons_padding_left_right">75dp</dimen>
+    <dimen name = "home_buttons_padding_top">30dp</dimen>
+    <dimen name = "home_buttons_layout_height">347dp</dimen>
+    <dimen name = "home_btn_layout_height">98dp</dimen>
+    <dimen name = "home_btnMultiplayer_text_size">45sp</dimen>
+    <dimen name = "home_btnSingleplayer_text_size">40sp</dimen>
+    <dimen name = "home_btnPlay_layout_margin_top">40dp</dimen>
+    <dimen name = "home_btnPlay_layout_width">300dp</dimen>
+    <dimen name = "home_btnCredits_layout_margin_top">21dp</dimen>
+    <dimen name = "home_btn_text_size">84sp</dimen>
+    <dimen name = "home_btn_credits_layout_width">375dp</dimen>
+    <dimen name = "home_gpgButtons_margin_top">90dp</dimen>
+    <dimen name = "home_gpgButtons_height">285dp</dimen>
+    <dimen name = "home_gpgButtons_width">105dp</dimen>
+    <dimen name = "home_right_button_height">90dp</dimen>
+    <dimen name = "home_gpg_button_padding">15dp</dimen>
+    <dimen name = "home_gpg_button_margin">7dp</dimen>
+    <dimen name = "home_dialog_height">75dp</dimen>
+    <dimen name = "home_dialog_width">277dp</dimen>
+    <dimen name = "home_dialog_margin_top">37dp</dimen>
+    <dimen name = "home_dialog_padding_right">15dp</dimen>
+    <dimen name = "home_dialog_padding_top">7dp</dimen>
+    <dimen name = "home_dialog_text_size">45sp</dimen>
+
+    <!-- SplashArt -->
+
+    <dimen name = "SplashArt_hdtm_text_size">105sp</dimen>
+    <dimen name = "SplashArt_hider_layout_width">240dp</dimen>
+    <dimen name = "SplashArt_hider_layout_height">75dp</dimen>
+    <dimen name = "SplashArt_impiccato_layout_margin_bottom">17dp</dimen>
+    <dimen name = "SplashArt_cloud3_layout_height">150dp</dimen>
+    <dimen name = "SplashArt_cloud1_layout_width">250dp</dimen>
+    <dimen name = "SplashArt_cloud1_layout_height">120dp</dimen>
+    <dimen name = "SplashArt_cloud4_cloud2_layout_width">525dp</dimen>
+    <dimen name = "SplashArt_cloud4_cloud2_layout_height">250dp</dimen>
+    <dimen name = "SplashArt_cloud2_layout_margin_top">70dp</dimen>
+
+    <!-- Dialog -->
+
+    <dimen name = "dialog_padding">3dp</dimen>
+    <dimen name = "dialog_title_text_size">60sp</dimen>
+    <dimen name = "dialog_title_layout_margin_bottom">38dp</dimen>
+    <dimen name = "dialog_line_layout_width">5dp</dimen>
+    <dimen name = "dialog_line_title_bottom_layout_margin_right_left">8dp</dimen>
+    <dimen name = "dialog_line_title_top_bottom_layout_margin_right_left">3dp</dimen>
+    <dimen name = "dialog_message_text_size">45sp</dimen>
+    <dimen name = "dialog_message_layout_margin_top">15dp</dimen>
+    <dimen name = "dialog_message_layout_margin_bottom">53dp</dimen>
+    <dimen name = "dialog_button_layout_width">75dp</dimen>
+    <dimen name = "dialog_button_layout_height">60dp</dimen>
+    <dimen name = "dialog_button_layout_margin_left_right">30dp</dimen>
+    <dimen name = "dialog_button_layout_margin_bottom">23dp</dimen>
+
+    <!-- Progress Dialog -->
+
+    <dimen name = "progress_dialog_layout_margin_horizontal">15dp</dimen>
+    <dimen name = "progress_dialog_cloud3_padding">15dp</dimen>
+    <dimen name = "progress_dialog_waiting_connection_text_size">27dp</dimen>
+    <dimen name = "progress_dialog_waiting_connection_padding">15dp</dimen>
+
+    <!-- Game Over -->
+
+    <dimen name = "game_over_play_again_button_text_size">65sp</dimen>
+    <dimen name = "game_over_play_again_button_horizontal_margin">45dp</dimen>
+    <dimen name = "game_over_play_again_button_height">98sp</dimen>
+    <dimen name = "game_over_home_button_text_size">75sp</dimen>
+    <dimen name = "game_over_home_button_horizontal_margin">75dp</dimen>
+    <dimen name = "game_over_home_button_height">98sp</dimen>
+    <dimen name = "game_over_play_again_button_margin_top">15dp</dimen>
+
+    <!-- Difficulty -->
+
+    <dimen name = "difficulty_button_margin">75dp</dimen>
+    <dimen name = "difficulty_button_width">300dp</dimen>
+    <dimen name = "difficulty_button_height">98dp</dimen>
+    <dimen name = "difficulty_button_text_size">75sp</dimen>
+    <dimen name = "difficulty_button_text_size_hard">68sp</dimen>
+    <dimen name = "difficulty_select_difficulty_text_size">68sp</dimen>
+    <dimen name = "difficulty_select_difficulty_text_layout_margin_top">45dp</dimen>
+    <dimen name = "difficulty_score_size">45sp</dimen>
+    <dimen name = "difficulty_score_title_size">45sp</dimen>
+    <dimen name = "difficulty_best_score_margin_bottom">15dp</dimen>
+    <dimen name = "difficulty_best_score_title_size">54sp</dimen>
+    <dimen name = "difficulty_best_score_title_margin_bottom">8dp</dimen>
+
+    <!-- Credits -->
+
+    <dimen name = "credits_logo_layout_height">150dp</dimen>
+    <dimen name = "credits_logo_layout_margin_horizontal">15dp</dimen>
+    <dimen name = "credits_hdev_text_size">98sp</dimen>
+    <dimen name = "credits_developedBy_text_size">75sp</dimen>
+    <dimen name = "credits_cloud4_layout_width">300dp</dimen>
+    <dimen name = "credits_cloud4_layout_height">120dp</dimen>
+    <dimen name = "credits_cloud1_layout_width">250dp</dimen>
+    <dimen name = "credits_cloud1_layout_height">120dp</dimen>
+    <dimen name = "credits_btnDonate_text_size">54sp</dimen>
+    <dimen name = "credits_btnDonate_layout_height">70dp</dimen>
+    <dimen name = "credits_btnDonate_layout_width">250dp</dimen>
+    <dimen name = "credits_btnDonate_layout_margin_bottom">15dp</dimen>
+    <dimen name = "credits_cloud3_layout_height">75dp</dimen>
+    <dimen name = "credits_cloud2_layout_width">300dp</dimen>
+    <dimen name = "credits_cloud2_layout_height">250dp</dimen>
+    <dimen name = "credits_cloud2_layout_margin_bottom">45dp</dimen>
+
+    <!-- BT Device list -->
+
+    <dimen name = "device_list_avaiable_device_text_size">38sp</dimen>
+    <dimen name = "device_list_avaiable_device_layout_margin_top">15dp</dimen>
+    <dimen name = "device_list_device_view_margin_top">30dp</dimen>
+    <dimen name = "device_list_device_view_margin">15dp</dimen>
+    <dimen name = "device_list_progress_bar_padding">240dp</dimen>
+
+    <!-- Device name -->
+
+    <dimen name = "device_name_padding">8dp</dimen>
+    <dimen name = "device_name_text_size">42sp</dimen>
+
+    <!-- Bluetooth mode -->
+
+    <dimen name = "bt_mode_txt_title_margin_top">15dp</dimen>
+    <dimen name = "bt_mode_txt_title_text_size">48sp</dimen>
+    <dimen name = "bt_mode_text_description_text_size">36sp</dimen>
+    <dimen name = "bt_mode_txt_description_margin">15dp</dimen>
+    <dimen name = "bt_mode_txt_descr_game_text_size">42sp</dimen>
+    <dimen name = "bt_mode_btn_width">300dp</dimen>
+    <dimen name = "bt_mode_btn_height">98dp</dimen>
+    <dimen name = "bt_mode_btn_text_size">45sp</dimen>
+    <dimen name = "bt_mode_btn_client_margin_top">188dp</dimen>
+    <dimen name = "bt_mode_btn_server_margin_top">150dp</dimen>
+
+    <!-- Others -->
+
+    <dimen name="buttons_padding_bottom">15dp</dimen>
+
+</resources>

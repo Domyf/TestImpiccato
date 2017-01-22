@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  ~ Created by HDev (Antonio Siciliani, Cosimo Mollica, Daniele Monaca, Domenico Ferraro, Marco De Caria)
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 15/01/17 12.12
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:id="@+id/achRow"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/achBackground"
+            android:background="@drawable/achievement_bg" />
+
+        <ImageView
+            android:id="@+id/imgViewAchievementIcon"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_width="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toRightOf="@+id/imgViewAchievementIcon"
+            android:layout_toEndOf="@+id/imgViewAchievementIcon"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp">
+
+            <com.hdevteam.impiccato.UI.HDTMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewAchievementExpValue"
+                android:layout_gravity="bottom"
+                android:textAllCaps="true"
+                android:text="0 XP"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="invisible" />
+
+            <com.hdevteam.impiccato.UI.HDTMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewAchievementUnlockDate"
+                android:layout_gravity="bottom"
+                android:textAllCaps="true"
+                android:text="Jan 31, 2017"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <com.hdevteam.impiccato.UI.HDTMTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewAchievementName"
+                android:textSize="30sp"
+                android:textAllCaps="true"
+                android:text="Impiccato!"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true" />
+
+            <com.hdevteam.impiccato.UI.HDTMTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtViewAchievementDescription"
+                android:textSize="20sp"
+                android:textAllCaps="true"
+                android:text="Perdi per la prima volta"
+                android:layout_below="@+id/txtViewAchievementName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/txtViewAchievementExpValue"
+                android:gravity="center_vertical" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

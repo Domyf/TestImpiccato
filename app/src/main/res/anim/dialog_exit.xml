@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~
+  ~ Created by HDev (Antonio Siciliani, Cosimo Mollica, Daniele Monaca, Domenico Ferraro, Marco De Caria)
+  ~ Copyright (c) 2016. All rights reserved.
+  ~
+  ~ Last modified 10/01/17 19.49
+  -->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <scale
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="180"
+        android:fromXScale="1"
+        android:fromYScale="1"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="0.94"
+        android:toYScale="0.94"/>
+    <alpha
+        android:duration="100"
+        android:fromAlpha="1.0"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:toAlpha="0.0"/>
+</set>

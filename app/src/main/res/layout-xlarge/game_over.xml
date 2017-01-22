@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/background"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorBackground" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:textSize="@dimen/game_over_home_button_text_size"
+        android:id="@+id/btnCredits"
+        android:onClick="btnHomeOnClick"
+        android:layout_width="match_parent"
+        android:text="@string/button_home"
+        android:background="@drawable/woodbutton_state"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/game_over_home_button_horizontal_margin"
+        android:layout_marginRight="@dimen/game_over_home_button_horizontal_margin"
+        android:layout_height="@dimen/game_over_home_button_height"
+        android:textColor="@color/textColor"
+        android:paddingBottom="@dimen/buttons_padding_bottom" />
+
+    <com.hdevteam.impiccato.UI.HDTMButton
+        android:id="@+id/btnPlay"
+        android:onClick="btnPlayAgainOnClick"
+        android:text="@string/button_play_again"
+        android:background="@drawable/woodbutton_state"
+        android:textSize="@dimen/game_over_play_again_button_text_size"
+        android:layout_below="@+id/btnCredits"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/game_over_play_again_button_horizontal_margin"
+        android:layout_marginRight="@dimen/game_over_play_again_button_horizontal_margin"
+        android:layout_marginTop="@dimen/game_over_play_again_button_margin_top"
+        android:layout_height="@dimen/game_over_play_again_button_height"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:paddingBottom="@dimen/buttons_padding_bottom" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<resources>
+
+    <string name="app_name" translatable="false">Impiccato</string>
+    <string name="version" translatable="false">2.2</string>
+
+    <string name="app_id" translatable="false">483345505055</string>
+    <string name="package_name" translatable="false">com.hdevteam.impiccato</string>
+
+    <string name="chart_boost_app_id" translatable="false">584dc93b04b016362a324f0a</string>
+    <string name="chart_boost_app_signature" translatable="false">2091b235187bb1cdbe0a020045f45237d80e5385</string>
+    <!--HomeActivity-->
+    <string name="button_play" translatable="false">Gioca</string>
+    <string name="button_play_again" translatable="false">Gioca ancora</string>
+    <string name="button_credits" translatable="false">Credits</string>
+    <string name="button_newgame" translatable="false">Nuova Partita</string>
+    <string name="button_nextword" translatable="false">Prossima Parola</string>
+    <string name="button_home" translatable="false">Home</string>
+    <string name="button_multiplayer" translatable="false">Multigiocatore</string>
+    <string name="button_singleplayer" translatable="false">Giocatore Singolo</string>
+    <string name="pg_connected" translatable="false">Connesso</string>
+    <string name="pg_disconnected" translatable="false">Disconnesso</string>
+    <string name="pg_connection_request" translatable="false">Connettiti!</string>
+    <string name="easy" translatable="false">Facile</string>
+    <string name="medium" translatable="false">Medio</string>
+    <string name="hard" translatable="false">Difficile</string>
+
+    <string name="follow_us" translatable="false">Seguici su</string>
+    <string name="you_won" translatable="false">Hai Indovinato!</string>
+    <string name="best_scores" translatable="false">Punteggi migliori</string>
+    <string name="select_difficulty" translatable="false">Scegli la difficoltà</string>
+
+    <string name="filename_dizionario_easy" translatable="false">dizionario_easy.txt</string>
+    <string name="filename_dizionario_medium" translatable="false">dizionario_medium.txt</string>
+    <string name="filename_dizionario_hard" translatable="false">dizionario_hard.txt</string>
+
+    <string name="daniele" translatable="false">Daniele Monaca</string>
+    <string name="antonio" translatable="false">Antonio Siciliani</string>
+    <string name="cosimo" translatable="false">Cosimo Mollica</string>
+    <string name="marco" translatable="false">Marco De Caria</string>
+    <string name="domenico" translatable="false">Domenico Ferraro</string>
+
+    <string name="host_button" translatable="false">Ospita una partita</string>
+    <string name="guest_button" translatable="false">Partecipa ad una partita</string>
+
+    <string name="dialog_want_exit" translatable="false">Vuoi uscire?</string>
+    <string name="dialog_go_home" translatable="false">Abbandonare?</string>
+    <string name="dialog_data_will_be_lost" translatable="false">Tutti i progressi andranno perduti</string>
+    <string name="dialog_positive_button" translatable="false">Si</string>
+    <string name="dialog_negative_button" translatable="false">No</string>
+    <string name="dialog_neutral_button" translatable="false">Ok</string>
+    <string name="dialog_connection_lost_title" translatable="false">Connessione persa</string>
+    <string name="dialog_connection_failed_title" translatable="false">Connessione fallita</string>
+    <string name="dialog_connection_lost_message" translatable="false">La connessione non e\' piu\' disponibile</string>
+    <string name="dialog_connection_failed_message" translatable="false">Dispositivo non raggiungibile</string>
+    <string name="dialog_rate_us_title" translatable="false">Cosa ne pensi?</string>
+    <string name="dialog_rate_us_message" translatable="false">Lasciaci una recensione!</string>
+    <string name="dialog_rate_us_positive_button" translatable="false">Ok</string>
+    <string name="dialog_rate_us_neutral_button" translatable="false">No</string>
+    <string name="dialog_rate_us_negative_button" translatable="false">Mai</string>
+
+    <string name="dialog_waiting_connection" translatable="false">In attesa di connessione...</string>
+
+    <string name="developed_by" translatable="false">Sviluppato da</string>
+    <string name="hdev" translatable="false">Hdev</string>
+    <string name="copyrights_owners" translatable="false">Antonio Siciliani, Cosimo Mollica, Daniele Monaca, Domenico Ferraro, Marco De Caria</string>
+    <string name="donate" translatable="false">Dona</string>
+    <string name="donation_url" translatable="false">https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&#38;hosted_button_id=UYGENK36RET7Q</string>
+
+    <string name="unable_to_show_reward_video" translatable="false">Impossibile ottenere un aiuto. Prova fra poco</string>
+    <string name="no_internet" translatable="false">Impossibile ottenere un aiuto. Nessuna connessione ad internet</string>
+
+    <string name="avaiable_device" translatable="false">Lista dei dispositivi disponibili:</string>
+
+    <string name="bt_mode_title" translatable="false">Sfida i tuoi amici</string>
+    <string name="bt_mode_rule" translatable="false">Chi indovina piu\' parole in un minuto vince!</string>
+    <string name="bt_mode_client_server_rule" translatable="false">Un telefono deve ospitare la partita e l\'altro vi partecipa</string>
+    <string name="bt_connecting_message" translatable="false">Connessione in corso...</string>
+    <string name="bt_won_message" translatable="false">HAI VINTO!</string>
+    <string name="bt_lost_message" translatable="false">HAI PERSO!</string>
+    <string name="bt_draw_message" translatable="false">PAREGGIO!</string>
+    <string name="achievement_benvenuto" translatable="false">CgkIn7aMzYgOEAIQAQ</string>
+    <string name="achievement_sopravvissuto" translatable="false">CgkIn7aMzYgOEAIQAg</string>
+    <string name="achievement_aiuto" translatable="false">CgkIn7aMzYgOEAIQBA</string>
+    <string name="achievement_impiccato" translatable="false">CgkIn7aMzYgOEAIQBQ</string>
+    <string name="achievement_impeccabile" translatable="false">CgkIn7aMzYgOEAIQCQ</string>
+    <string name="achievement_vocabolario_umano" translatable="false">CgkIn7aMzYgOEAIQAw</string>
+    <string name="achievement_per_un_pelo" translatable="false">CgkIn7aMzYgOEAIQCg</string>
+    <string name="leaderboard_classifica_impiccato__facile" translatable="false">CgkIn7aMzYgOEAIQBg</string>
+    <string name="leaderboard_classifica_impiccato__medio" translatable="false">CgkIn7aMzYgOEAIQBw</string>
+    <string name="leaderboard_classifica_impiccato__difficile" translatable="false">CgkIn7aMzYgOEAIQCA</string>
+
+
+    <string name="facebook_url" translatable="false">https://www.facebook.com/hdevteam</string>
+    <string name="instagram_app_url" translatable="false">http://instagram.com/_u/hdevteam</string>
+    <string name="instagram_browser_url" translatable="false">https://instagram.com/hdevteam</string>
+</resources>
+
