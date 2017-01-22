@@ -47,6 +47,7 @@ import com.hdevteam.impiccato.Gioco.Salvataggi.Save;
 import com.hdevteam.impiccato.Gioco.Salvataggi.Saver;
 import com.hdevteam.impiccato.Gioco.Salvataggi.Settings;
 import com.hdevteam.impiccato.Gioco.Salvataggi.WordList;
+import com.hdevteam.impiccato.Gioco.Wordlist.WordlistHelper;
 import com.hdevteam.impiccato.HomeActivity;
 import com.hdevteam.impiccato.R;
 import com.hdevteam.impiccato.UI.HDTMDialog;
@@ -91,7 +92,7 @@ public class GameActivity extends AppCompatActivity implements GoogleApiClient.C
     private boolean tutorial;
     private boolean end;
     GoogleApiClient googleApiClient;
-
+    WordlistHelper wordlistHelper;
     private ChartboostDelegate YourDelegateObject = new ChartboostDelegate() {
         public void didCompleteRewardedVideo(String location, int reward) {
             rewardLetter();
@@ -109,7 +110,7 @@ public class GameActivity extends AppCompatActivity implements GoogleApiClient.C
                 .addOnConnectionFailedListener(this)
                 .addApi(Games.API).addScope(Games.SCOPE_GAMES)
                 .build();
-
+        wordlistHelper = new WordlistHelper(this);
         /*mRewardedVid = new AdcashRewardedVideo();
         mRewardedVid.setZoneId("1492439");
         mRewardedVid.setAdListener(new AdcashRewardedVideo.Listener() {
@@ -262,12 +263,12 @@ public class GameActivity extends AppCompatActivity implements GoogleApiClient.C
     /** Prende la parola da indovinare nel dizionario */
     public void setWordToGuess() {
 
-        try {
-            game.setWordToGuess(WordList.getWordAt(getApplication().getAssets().open(filename_dizionario), rowToGuess));
-        } catch (IOException e) {
+        // try {
+            game.setWordToGuess(wordlistHelper.getWord(rowToGuess, filename_dizionario));
+        /*} catch (IOException e) {
             e.printStackTrace();
         }
-        Log.i("GameActivity", "La parola da indovinare è " + game.getWordToGuess() + " alla riga "+rowToGuess);
+        Log.i("GameActivity", "La parola da indovinare è " + game.getWordToGuess() + " alla riga "+rowToGuess);*/
     }
 
     /** Genera la stringa formata dagli "_" */

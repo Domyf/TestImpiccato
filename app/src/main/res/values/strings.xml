@@ -29,9 +29,9 @@
     <string name="best_scores" translatable="false">Punteggi migliori</string>
     <string name="select_difficulty" translatable="false">Scegli la difficoltà</string>
 
-    <string name="filename_dizionario_easy" translatable="false">dizionario_easy.txt</string>
-    <string name="filename_dizionario_medium" translatable="false">dizionario_medium.txt</string>
-    <string name="filename_dizionario_hard" translatable="false">dizionario_hard.txt</string>
+    <string name="filename_dizionario_easy" translatable="false">easywords</string>
+    <string name="filename_dizionario_medium" translatable="false">mediumwords</string>
+    <string name="filename_dizionario_hard" translatable="false">hardwords</string>
 
     <string name="daniele" translatable="false">Daniele Monaca</string>
     <string name="antonio" translatable="false">Antonio Siciliani</string>
