@@ -72,7 +72,10 @@ public class WordlistHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
-
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + EASY_WORDS_TABLE);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + MEDIUM_WORDS_TABLE);
+        sqLiteDatabase.execSQL("DROP TABLE IF EXISTS " + HARD_WORDS_TABLE);
+        onCreate(sqLiteDatabase);
     }
     /**
      * Crea la tabella con il nome indicato come parametro
