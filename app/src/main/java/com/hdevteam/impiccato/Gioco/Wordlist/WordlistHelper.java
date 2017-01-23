@@ -28,10 +28,40 @@ public class WordlistHelper extends SQLiteOpenHelper {
     public static String WORD_FIELD = "Word";
     public static String MEANING_FIELD = "Meaning";
     public static String CATEGORY_FIELD = "Category";
+
+    private int hardWords;
+    private int mediumWords;
+    private int easyWords;
+
+    public int getHardWords() {
+        return hardWords;
+    }
+
+    public int getMediumWords() {
+        return mediumWords;
+    }
+
+    public int getEasyWords() {
+        return easyWords;
+    }
+
     public WordlistHelper(Context context){
         super(context, DB_NAME, null, DB_VERSION);
         this.context = context;
+        easyWords = getWordsCount(EASY_WORDS_TABLE);
+        mediumWords = getWordsCount(MEDIUM_WORDS_TABLE);
+        hardWords = getWordsCount(HARD_WORDS_TABLE);
+
     }
+    /**Restituisce il numero di parole presenti nella tabella
+     * @param tableName nome della tabella*/
+    private int getWordsCount(String tableName){
+        SQLiteDatabase db = getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + tableName, null);
+        cursor.moveToFirst();
+        return cursor.getCount();
+    }
+
     @Override
     public void onCreate(SQLiteDatabase database) {
         Log.i("WordlistHelper", "Creo il db...");
@@ -82,12 +112,29 @@ public class WordlistHelper extends SQLiteOpenHelper {
             Log.e("WordlistHelper", "Errore esecuzione query: " + e.getLocalizedMessage());
         }
     }
+    /**
+     * Restituisce la parola identificata dall'id
+     * @param id id della parola
+     * @param table nome della tabella dalla quale ricavare la parola
+     */
     public String getWord(long id, String table){
         SQLiteDatabase db = this.getReadableDatabase();
-        String query = "SELECT Word FROM " + table + " WHERE " + ID_FIELD + " = " + id;
+        String query = "SELECT " + WORD_FIELD + " FROM " + table + " WHERE " + ID_FIELD + " = " + id;
         Log.i("WordlistHelper", "Query: " + query);
         Cursor cursor = db.rawQuery(query, null);
         cursor.moveToFirst();
         return cursor.getString(cursor.getColumnIndex(WORD_FIELD));
+    }
+    /**
+     * Restituisce il significato della parola identificata dall'id
+     * @param id id della parola
+     * @param table nome della tabella dalla quale ricavare la parola*/
+    public String getMeaning(long id, String table){
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT " + MEANING_FIELD + " FROM " + table + " WHERE " + ID_FIELD + "  = " + id;
+        Log.i("WordlistHelper", "Query: " + query);
+        Cursor cursor = db.rawQuery(query, null);
+        cursor.moveToFirst();
+        return cursor.getString(cursor.getColumnIndex(MEANING_FIELD));
     }
 }

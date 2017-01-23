@@ -111,66 +111,6 @@ public class GameActivity extends AppCompatActivity implements GoogleApiClient.C
                 .addApi(Games.API).addScope(Games.SCOPE_GAMES)
                 .build();
         wordlistHelper = new WordlistHelper(this);
-        /*mRewardedVid = new AdcashRewardedVideo();
-        mRewardedVid.setZoneId("1492439");
-        mRewardedVid.setAdListener(new AdcashRewardedVideo.Listener() {
-            @Override
-            public void onAdLoaded(AdcashReward adcashReward) {
-                Log.i("GameActivity", "Ad caricato");
-            }
-
-            @Override
-            public void onAdFailedToLoad(AdcashError adcashError) {
-                switch (adcashError) {
-                    case NO_NETWORK:
-                        Log.i("GameActivity", "Ad non caricato. Nessuna connessione");
-                        // Handle the "No internet connection" situation here
-                        break;
-                    case REQUEST_FAILED:
-                        Log.i("GameActivity", "Ad non caricato. Richiesta fallita");
-                        // Handle the "Request failed" situation here
-                        break;
-                    case NETWORK_FAILURE:
-                        Log.i("GameActivity", "Ad non caricato. Problema di connessione");
-                        // Handle the "Network failure" situation here
-                        break;
-                    case NO_AD:
-                        Log.i("GameActivity", "Ad non caricato. Non ci sono ad");
-                        // Handle the "There is no ad" situation here
-                        break;
-                    case NOT_READY:
-                        Log.i("GameActivity", "Ad non caricato. Non sono pronto");
-                        // Handle the "Ad not loaded" situation here
-                        break;
-                    case ALREADY_DISPLAYED:
-                        Log.i("GameActivity", "Ad non caricato. Sto già mostrando l'ad");
-                        // Handle the "Already displayed" situation here
-                        break;
-                }
-            }
-
-            @Override
-            public void onAdOpened() {
-                Log.i("GameActivity", "Ad aperto");
-            }
-
-            @Override
-            public void onAdReward(AdcashReward adcashReward) {
-                Log.i("GameActivity", "L'Ad restituisce il reward");
-            }
-
-            @Override
-            public void onAdClosed() {
-                Log.i("GameActivity", "Ad chiuso dall'utente");
-            }
-
-            @Override
-            public void onAdLeftApplication() {
-                Log.i("GameActivity", "L'utente è uscito dall'applicazione cliccando sull'Ad");
-            }
-        });
-        mRewardedVid.loadAd(this);*/
-
         if (Settings.isGPGConnected()) {
             Log.i("GameActivity", "L'app era connessa a Play Games");
             if (googleApiClient.isConnected())
